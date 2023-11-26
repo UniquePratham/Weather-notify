@@ -58,8 +58,9 @@
   width: 500px;
 }
 
-.signInemail,.signInPassword{
-    width: 60%;
+.signInemail,
+.signInPassword {
+  width: 300px;
 }
 
 .ItemCont2 {
@@ -123,4 +124,30 @@
 .signUpLink:hover {
   color: aqua;
   text-decoration: underline;
+}
+
+.customIcon {
+  font-size: 0.1rem !important;
+  color: white;
+  max-width: 30px;
+  max-width: 20px;
+}
+.customEyeIcon {
+  font-size: 0.1rem !important;
+  color: white;
+  max-width: 30px;
+  max-width: 20px;
+  position: relative;
+  left: -30px;
+  cursor: pointer;
+}
+.ItemCont3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 520px;
+  position: relative;
+}
+.alertzindexImp {
+  z-index: 2 !important;
 }
