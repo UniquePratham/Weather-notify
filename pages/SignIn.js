@@ -19,7 +19,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const SignIn = () => {
-  const [isredPassAlertVisible, setIsredPassAlertVisible] = useState(false); 
+  const [isredPassAlertVisible, setIsredPassAlertVisible] = useState(false);
+  const [isredEmailAlertVisible, setIsredEmailAlertVisible] = useState(false); 
   const [showPassword, setShowPassword] = useState(false);
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
