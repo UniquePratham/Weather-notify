@@ -15,7 +15,7 @@ const Home = () => {
 
   const getLocationWeather = async (latitude, longitude) => {
     try {
-      const apiKey = "21dd5544b1d3413d9b783038230304";
+      const apiKey = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
       const response = await fetch(
         `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}`
       );

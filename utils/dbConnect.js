@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
-const MONGODB_URI =
-  "mongodb+srv://UniquePratham:LujtTkl879XO1q27@cloudycluster.ygyavyt.mongodb.net/signupdatabase?retryWrites=true&w=majority";
+const MONGODB_URI = process.env.MONGODB_URI;
 if (!MONGODB_URI) {
   throw new Error(
     "Please define the MONGODB_URI environment variable inside the .env.local"
@@ -34,7 +33,6 @@ const dbConnect = async () => {
   return cached.conn;
   // mongoose.connect("mongodb://localhost:27017/signUpDatabase");
   // mongoose.connect(
-  //   // `mongodb+srv://${username}:${password}@${cluster}.ygyavyt.mongodb.net/`
   // );
 };
 
